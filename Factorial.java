@@ -1,8 +1,6 @@
-import java.util.*;
-
 class Main {
-    
-    static int factorial(int n) {
+
+    static int calculate(int n) {
         int fact = 1;
         for (int i = 1; i <= n; i++) {
             fact *= i;
@@ -11,9 +9,10 @@ class Main {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        int n = sc.nextInt();
-        System.out.println(factorial(n));
+        int n = 5;
+        int res = calculate(n);
+
+        System.out.println("Factorial Program");
+        System.out.println("Factorial of " + n + " = " + res);
     }
 }
